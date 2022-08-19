@@ -10,7 +10,7 @@ HTML
   - header, section, nav, article, aside, footer tag
   - ul, li tag
   - a, img tag
-<br>
+
 CSS
   - width, height
   - box-sizing, border, padding, margin
