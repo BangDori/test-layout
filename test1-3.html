@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      aside {
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav, aside {
+        display: flex;
+        flex-basis: 150px;
+        flex-shrink: 0;
+      }
+
+      nav, article, aside {
+        margin-top: 15px;
+        padding: 3px;
+        margin-bottom: 15px;
+      }
+
+      nav {
+        border-right: 1px solid gray;
+      }
+
+      article {
+        width: 100%;
+      }
+
+      aside {
+        border-left: 1px solid gray;
+      }
+
+      footer {
+        padding: 30px;
+        text-align: center;
+        border-top: 1px solid gray;
+      }
+
+      img {
+        width: 225px;
+        height: 225px;
+      }
+
+      @media(max-width:750px){
+        header {
+          padding: 15px;
+          text-align: center;
+          border-bottom: 1px solid gray;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+        }
+        nav, article, aside {
+          margin: 0;
+          padding: 0;
+        }
+        nav {
+          order: 0;
+          padding: 5px;
+          border-right: none;
+          flex-basis: auto;
+          border-bottom: 1px solid gray;
+        }
+        nav>div{
+          width: 100%;
+        }
+        nav>div>ul{
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+        article {
+          order: 1;
+          padding: 15px;
+          border-bottom: 1px solid gray;
+        }
+        aside {
+          order: 2;
+          padding: 20px;
+          flex-basis: auto;
+          border-left: none;
+        }
+        footer {
+          padding: 30px;
+          text-align: center;
+          border-top: 1px solid gray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Web</h2>
+      </header>
+
+      <section class="content">
+        <nav>
+          <div class="">
+            <ul>
+              <li><a href="test1.html">Home</a></li>
+              <li><a href="test1-1.html">HTML</a></li>
+              <li><a href="test1-2.html">CSS</a></li>
+              <li><a href="test1-3.html">JavaScript</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <article class="">
+          <p>JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+          <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+          <p>The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.</p>
+          <p>JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.</p>
+          <p>Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.</p>
+        </article>
+
+        <aside class="">
+          <img src="JavaScript.png" alt="JavaScript">
+        </aside>
+      </section>
+
+      <footer>
+        <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia - JavaScript</a>
+      </footer>
+    </div>
+  </body>
+</html>

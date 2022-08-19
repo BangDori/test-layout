@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      aside {
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav, aside {
+        display: flex;
+        flex-basis: 150px;
+        flex-shrink: 0;
+      }
+
+      nav, article, aside {
+        margin-top: 15px;
+        padding: 3px;
+        margin-bottom: 15px;
+      }
+
+      nav {
+        border-right: 1px solid gray;
+      }
+
+      article {
+        width: 100%;
+      }
+
+      aside {
+        border-left: 1px solid gray;
+      }
+
+      footer {
+        padding: 30px;
+        text-align: center;
+        border-top: 1px solid gray;
+      }
+
+      img {
+        width: 225px;
+        height: 225px;
+      }
+
+      @media(max-width:750px){
+        header {
+          padding: 15px;
+          text-align: center;
+          border-bottom: 1px solid gray;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+        }
+        nav, article, aside {
+          margin: 0;
+          padding: 0;
+        }
+        nav {
+          order: 0;
+          padding: 5px;
+          border-right: none;
+          flex-basis: auto;
+          border-bottom: 1px solid gray;
+        }
+        nav>div{
+          width: 100%;
+        }
+        nav>div>ul{
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+        article {
+          order: 1;
+          padding: 15px;
+          border-bottom: 1px solid gray;
+        }
+        aside {
+          order: 2;
+          padding: 20px;
+          flex-basis: auto;
+          border-left: none;
+        }
+        footer {
+          padding: 30px;
+          text-align: center;
+          border-top: 1px solid gray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Web</h2>
+      </header>
+
+      <section class="content">
+        <nav>
+          <div class="">
+            <ul>
+              <li><a href="test1.html">Home</a></li>
+              <li><a href="test1-1.html">HTML</a></li>
+              <li><a href="test1-2.html">CSS</a></li>
+              <li><a href="test1-3.html">JavaScript</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <article>
+          <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+          <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+          <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as img tag and input tag directly introduce content into the page. Other tags such as p tag surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.</p>
+          <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997. A form of HTML, known as HTML5, is used to display video and audio, primarily using the canvas tag element, in collaboration with javascript.</p>
+        </article>
+
+        <aside class="">
+          <img src="HTML.png" alt="HTML">
+        </aside>
+      </section>
+
+      <footer>
+        <a href="https://en.wikipedia.org/wiki/HTML">Wikipedia - HTML</a>
+      </footer>
+    </div>
+  </body>
+</html>
