@@ -13,13 +13,13 @@ Checking My Skills (HTML & CSS)
 - max-width
 - Redesign using display
 
-HTML
+### HTML
   - div
   - header, section, nav, article, aside, footer tag
   - ul, li tag
   - a, img tag
 
-CSS
+### CSS
   - width, height
   - box-sizing, border, padding, margin
   - display, flex-direction, text-align, justify-content, align-items
