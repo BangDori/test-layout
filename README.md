@@ -1,6 +1,6 @@
 # ck1
 
-2022-08-20
+<p>2022-08-20</p>
 Checking My Skills (HTML & CSS)
 
 I understand the general contents of HTML & CSS. 
@@ -10,7 +10,6 @@ HTML
   - header, section, nav, article, aside, footer tag
   - ul, li tag
   - a, img tag
-<br>
 CSS
   - width, height
   - box-sizing, border, padding, margin
@@ -19,7 +18,7 @@ CSS
   - mediaquery, max-width
   - order
   - list-style
-<br>
+
 1. understand the structure of the layout.
 2. You can design by creating your own structure using the layout you learned earlier.
 3. Using the mediaquery property of CSS, the screens displayed on mobile and desktop are designed diffently.
