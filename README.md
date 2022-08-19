@@ -28,3 +28,4 @@ CSS
   3-2. mediaquery
   3-3. max-width
   3-4. Redesign using display
+
