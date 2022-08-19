@@ -3,7 +3,7 @@
 2022-08-20
 Checking My Skills (HTML & CSS)
 
-I understand the general contents of HTML & CSS. 
+##I understand the general contents of HTML & CSS. 
 
 1. understand the structure of the layout.
 2. You can design by creating your own structure using the layout you learned earlier.
